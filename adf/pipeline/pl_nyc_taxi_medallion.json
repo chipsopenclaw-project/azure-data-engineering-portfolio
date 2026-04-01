@@ -1,0 +1,28 @@
+{
+	"name": "pl_nyc_taxi_medallion",
+	"properties": {
+		"activities": [
+			{
+				"name": "nb_bronze_ingestion",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/chipsopenclaw@gmail.com/azure-data-engineering-portfolio/notebooks/bronze/01_bronze_nyc_taxi_ingestion"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_databricks_dev",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": []
+	}
+}
