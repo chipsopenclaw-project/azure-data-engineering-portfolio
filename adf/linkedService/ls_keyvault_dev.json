@@ -1,0 +1,10 @@
+{
+	"name": "ls_keyvault_dev",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kv-dataeng-dev-lsc.vault.azure.net/"
+		}
+	}
+}
