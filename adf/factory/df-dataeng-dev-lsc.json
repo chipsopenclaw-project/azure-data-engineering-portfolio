@@ -1,0 +1,9 @@
+{
+	"name": "df-dataeng-dev-lsc",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "10f50acf-bae4-45b4-9c9e-53cabb19b208",
+		"tenantId": "79596cdd-1b9a-451b-b232-544add37a057"
+	}
+}
