@@ -74,7 +74,7 @@
 					"newClusterSparkEnvVars": {
 						"PYSPARK_PYTHON": "/databricks/python3/bin/python3"
 					},
-					"newClusterVersion": "16.4.x-scala2.12",
+					"newClusterVersion": "15.4.x-scala2.12",
 					"clusterOption": "Fixed",
 					"newClusterInitScripts": []
 				}
