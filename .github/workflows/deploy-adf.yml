@@ -1,0 +1,25 @@
+name: Deploy ADF to Azure
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-adf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy ADF ARM Template
+        uses: azure/arm-deploy@v1
+        with:
+          resourceGroupName: rg-dataeng-dev
+          template: ./df-dataeng-dev-lsc/ARMTemplateForFactory.json
+          parameters: ./df-dataeng-dev-lsc/ARMTemplateParametersForFactory.json
